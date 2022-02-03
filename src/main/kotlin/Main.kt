@@ -1,5 +1,6 @@
 package basic.syntax
 import concepts.types.*
+import concepts.controlFlow.*
 fun main() {
 //    println("Walaa")
 //
@@ -12,6 +13,7 @@ fun main() {
     //printDouble(i) // Error: Type mismatch
     //printDouble(f) // Error: Type mismatch
    // strings()
-    func()
+    //func()
+    function()
 
 }
