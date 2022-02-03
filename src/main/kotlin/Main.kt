@@ -11,6 +11,7 @@ fun main() {
 //    printDouble(d)
     //printDouble(i) // Error: Type mismatch
     //printDouble(f) // Error: Type mismatch
-    strings()
+   // strings()
+    func()
 
 }
