@@ -3,13 +3,28 @@ package concepts.types
 fun integers() {
     //Integers
     val one = 1 // Int
-    print(one);
+    //print(one);
     val threeBillion = 3000000000 // Long
-    print(threeBillion);
+    //print(threeBillion);
     val oneLong = 1L // Long
-    print(oneLong);
+   // print(oneLong);
     val oneByte: Byte = 1
-    println(oneByte);
+    //println(oneByte);
+
+    val b: Int = 10000
+    val boxedA: Int? = b
+    val anotherBoxedA: Int? = b
+    //println(boxedA === anotherBoxedA)
+
+    val c: Int = 10000
+    val boxedB: Int? = c
+    val anotherBoxedB: Int? = c
+    //println(boxedB == anotherBoxedB) // Prints 'true'
+
+    val x = 8.2
+    val y = 10.9
+    val z = 9.8
+    println(z !in x..y)
 }
 
 fun floatingPoints(){
@@ -22,6 +37,40 @@ fun floatingPoints(){
     println(eFloat);
 }
 
+fun characters(){
+    val a :Char='9'
+    println(a.digitToInt())
+}
+
+fun strings(){
+    val s :String = "Kotlin"
+    for(c in s){
+        print(c)
+    }
+
+    println()
+    println(s+986+true)
+
+    val ss :String = """
+        Welcome 
+        to 
+        Palestinge
+    """.trimIndent()
+    val sss = "new\nline"
+
+    println(ss)
+    println(sss)
+
+    val i :Int = 8
+    println("i=$i")
+
+    val price = """
+${'$'}_9.99
+"""
+
+    println(price)
+
+}
 
 fun printDouble(d: Double) { print(d) }
 
