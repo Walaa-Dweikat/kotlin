@@ -1,6 +1,7 @@
-package basic.syntax.concepts.classes
+package concepts.classes
 
-open abstract class Shape(type:Int) {
+open abstract class Shape(_type:Int) {
+    private val type = _type
     init{
         when(type){
             1-> println("The shape is a Rectangle")
@@ -10,14 +11,19 @@ open abstract class Shape(type:Int) {
         }
     }
     abstract fun calculateArea():Double
-
-
 }
 
-class Rectangle(w:Double,h:Double): Shape(1) {
-    var width = w
-    var height = h
+open class Rectangle(_width:Double,_height:Double): Shape(1) {
+    init{
+        println("Rectangle")
+    }
+
+    var width =_width
+    var height = _height
+
+
     override fun calculateArea():Double{
         return width*height
     }
 }
+

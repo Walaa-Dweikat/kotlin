@@ -1,5 +1,6 @@
 package basic.syntax
 
+import concepts.classes.Company
 import concepts.types.*
 import concepts.controlFlow.*
 
@@ -15,11 +16,13 @@ fun main() {
 //    printDouble(d)
     //printDouble(i) // Error: Type mismatch
     //printDouble(f) // Error: Type mismatch
-   // strings()
+    // strings()
     //func()
     //function()
+   val c = Car("584","lkm",6526)
+   c.foo()
 
-    val c1 = Car("Ford", "Mustang", 1969)
-    c1.drive()
-    c1.speed(100.8)
+
+
+
 }

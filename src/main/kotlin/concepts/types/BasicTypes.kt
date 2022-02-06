@@ -1,8 +1,8 @@
 package concepts.types
 
-fun integers() {
+ fun integers() {
     //Integers
-    val one = 1 // Int
+     val one = 1 // Int
     //print(one);
     val threeBillion = 3000000000 // Long
     //print(threeBillion);
@@ -12,7 +12,8 @@ fun integers() {
     //println(oneByte);
 
     val b: Int = 10000
-    val boxedA: Int? = b
+    var boxedA: Int? = b
+    boxedA=null
     val anotherBoxedA: Int? = b
     //println(boxedA === anotherBoxedA)
 
