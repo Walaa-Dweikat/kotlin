@@ -3,7 +3,7 @@ package basic.syntax
 import concepts.classes.Company
 import concepts.types.*
 import concepts.controlFlow.*
-
+import concepts.functions.*
 import concepts.classes.*
 fun main() {
 //    println("Walaa")
@@ -19,8 +19,7 @@ fun main() {
     // strings()
     //func()
     //function()
-   val c = Car("584","lkm",6526)
-   c.foo()
+   println( findFactorial(3))
 
 
 
