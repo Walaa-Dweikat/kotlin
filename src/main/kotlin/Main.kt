@@ -1,10 +1,7 @@
 package basic.syntax
 
-import concepts.classes.Company
-import concepts.types.*
-import concepts.controlFlow.*
 import concepts.functions.*
-import concepts.classes.*
+
 fun main() {
 //    println("Walaa")
 //
@@ -19,7 +16,7 @@ fun main() {
     // strings()
     //func()
     //function()
-   println( findFactorial(3))
+  val result = re(repeatFunction,"walaa ",5)
 
 
 
