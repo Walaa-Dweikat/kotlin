@@ -1,6 +1,4 @@
 package basic.syntax
-import basic.syntax.concepts.classes.Person
-import basic.syntax.concepts.classes.getPerosn
 import concepts.classes.*
 fun main() {
 //    println("Walaa")
@@ -21,15 +19,23 @@ fun main() {
 //
 //  println("Walaa ".plus("Dweikat"))
  // val (name, age) = getPerosn("Jack",30)
+//
+//  val jack = Person("Jack",1)
+//  jack.gender="male"
+//  val olderJack = jack.copy(age=2)
+//  //val (name, age) = getPerosn(olderJack)
+//  val (name,age) = olderJack
+//
+//  println(olderJack.gender) //empty string
 
-  val jack = Person("Jack",1)
-  jack.gender="male"
-  val olderJack = jack.copy(age=2)
-  //val (name, age) = getPerosn(olderJack)
-  val (name,age) = olderJack
+//  val a:Box<Int> = Box<Int>(5)
+//  val b = Box("Kotlin")
 
-  println(olderJack.gender) //empty string
 
+  //filtering positives
+//  val ints = listOf(1,-1,-8,5,7)
+//  val positives = ints.filter{it>0}
+//  for(x in positives)println(x)
 
 
 
