@@ -1,4 +1,5 @@
 package basic.syntax
+import basic.syntax.concepts.classes.Person
 import basic.syntax.concepts.classes.getPerosn
 import concepts.classes.*
 fun main() {
@@ -19,9 +20,16 @@ fun main() {
 //
 //
 //  println("Walaa ".plus("Dweikat"))
-  val (name, age) = getPerosn("Walaa",23)
-  println(name)
+ // val (name, age) = getPerosn("Jack",30)
+
+  val jack = Person("Jack",1)
+  val olderJack = jack.copy(age=2)
+  //val (name, age) = getPerosn(olderJack)
+  val (name,age) = olderJack
+
   println(age)
+
+
 
 }
 
