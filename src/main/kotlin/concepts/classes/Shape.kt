@@ -18,7 +18,7 @@ open class Rectangle(_width:Double,_height:Double): Shape(1) {
         println("Rectangle")
     }
 
-    var width =_width
+    var width = _width
     var height = _height
 
 
@@ -26,4 +26,6 @@ open class Rectangle(_width:Double,_height:Double): Shape(1) {
         return width*height
     }
 }
+
+
 

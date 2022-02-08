@@ -1,7 +1,6 @@
 package basic.syntax
-
-import concepts.functions.*
-
+import basic.syntax.concepts.classes.getPerosn
+import concepts.classes.*
 fun main() {
 //    println("Walaa")
 //
@@ -16,9 +15,14 @@ fun main() {
     // strings()
     //func()
     //function()
-  val result = re(repeatFunction,"walaa ",5)
-
-
-
+//  val result = re(repeatFunction,"walaa ",5)
+//
+//
+//  println("Walaa ".plus("Dweikat"))
+  val (name, age) = getPerosn("Walaa",23)
+  println(name)
+  println(age)
 
 }
+
+
