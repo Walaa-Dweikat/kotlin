@@ -23,11 +23,13 @@ fun main() {
  // val (name, age) = getPerosn("Jack",30)
 
   val jack = Person("Jack",1)
+  jack.gender="male"
   val olderJack = jack.copy(age=2)
   //val (name, age) = getPerosn(olderJack)
   val (name,age) = olderJack
 
-  println(age)
+  println(olderJack.gender) //empty string
+
 
 
 
