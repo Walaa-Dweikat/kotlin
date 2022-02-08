@@ -1,4 +1,5 @@
 package basic.syntax
+import basic.syntax.idomis.*
 import concepts.classes.*
 fun main() {
 //    println("Walaa")
@@ -31,11 +32,8 @@ fun main() {
 //  val a:Box<Int> = Box<Int>(5)
 //  val b = Box("Kotlin")
 
+    learnKotlin()
 
-  //filtering positives
-//  val ints = listOf(1,-1,-8,5,7)
-//  val positives = ints.filter{it>0}
-//  for(x in positives)println(x)
 
 
 
