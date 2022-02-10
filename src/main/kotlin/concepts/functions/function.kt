@@ -12,8 +12,7 @@ fun asList(vararg ts: Int) {
 }
 
 infix fun Int.add(x: Int): Int {  //infix function
-    var i = this
-    return i+x
+    return this+x
 }
 
 tailrec fun findFactorial(x:Int,factorial:Int = 1):Int{
@@ -30,3 +29,15 @@ fun re( f:(String, Int) -> String, a:String, b:Int)
 
 
 val stringPlus:String.(String)->String = String::plus
+
+
+//operator overloading
+data class Point(var x:Int, var y:Int)
+operator fun Point.unaryMinus() = Point(-x, -y)
+operator fun Point.inc() = Point(x++,y++)
+
+data class Counter(val dayIndex: Int) {
+    operator fun plus(increment: Int): Counter {
+        return Counter(dayIndex + increment)
+    }
+}
